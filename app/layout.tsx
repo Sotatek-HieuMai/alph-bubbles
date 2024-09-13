@@ -11,7 +11,6 @@ const inter = Poppins({ subsets: ["latin"], weight: ["400"] });
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `${process.env.NEXT_PUBLIC_VERCEL_URL}` : "http://localhost:3000";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
   title: {
     default: "CryptoBubbles | Interactive visualization using Pixi.js!",
     template: `%s | CryptoBubbles`,
